@@ -23,7 +23,14 @@ n = size(x, 1);
 
 Ca    = max(min(x(:,2), 10), 1e-6);
 H_alpha = 8.0;                        % same base as spm_gx_calcium.m
-alpha = H_alpha * exp(P.alpha(:));
+alpha = H_alpha * exp(P.alpha(:)) .* ones(n,1);  % broadcast scalar gain to
+                                                  % n regions (P.alpha is a
+                                                  % single global parameter,
+                                                  % same as in spm_gx_calcium.m;
+                                                  % without this broadcast,
+                                                  % diag(alpha) below is 1x1
+                                                  % instead of nxn, breaking
+                                                  % the Jacobian dimensions)
 beta  = P.beta_y;
 
 y = alpha .* Ca + beta;
@@ -40,7 +47,6 @@ if nargout > 2
     dgdP.beta_y = speye(n);
     dgdP.Kd     = sparse(n,n);   % unused; kept for struct compatibility
     dgdP.n      = sparse(n,n);
-    dgdP.beta   = speye(n);
 else
     dgdP = [];
 end

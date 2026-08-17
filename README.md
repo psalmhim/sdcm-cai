@@ -2,7 +2,7 @@
 
 Code accompanying:
 
-> **Spectral dynamic causal modeling for effective connectivity from spontaneous population calcium imaging: Method development and empirical application to larval zebrafish**
+> **Spectral dynamic causal modeling for effective connectivity from spontaneous population calcium imaging**
 > Hae-Jeong Park, Dongmyeong Lee, Euisun Kim, Jinseok Eo, Karl Friston
 
 sDCM-CaI extends spectral Dynamic Causal Modeling to resting-state calcium imaging, combining a reduced neuronal state-space model, calcium-state dynamics, a fluorescence observation model, and Bayesian inversion of cross-spectral density features to estimate directed effective connectivity from population calcium signals.
@@ -29,6 +29,10 @@ core/            Generative model and inversion machinery
 
 simulations/
   run_mc_simulation_4node.m        4-node Monte Carlo recovery simulation (main-text Fig. 2)
+  demo_simulation_and_inversion.m  Self-contained demo: simulates 4-node calcium data and
+                                    inverts it under both the Hill and linear observation
+                                    models (set DCM.options.custom_g to switch), reporting
+                                    recovered connectivity and free energy for each
 
 empirical_12n/   12-node empirical zebrafish analysis pipeline
   extract_*_signals_12n_from_raw.m, teo_kmeans_split.m
@@ -41,7 +45,7 @@ empirical_12n/   12-node empirical zebrafish analysis pipeline
                                     BMS-winning specification.
   run_peb_*.m, run_bms_*.m          Group-level PEB and Bayesian model selection/reduction
   run_splithalf_*.m                 Temporal and cross-subset split-half reliability analyses
-  run_sensitivity_s16_*.m           Prior-covariance and prior-mean sensitivity analysis (Fig. 5)
+  run_sensitivity_s16_*.m           Prior-covariance and prior-mean sensitivity analysis (Fig. 6)
   run_mc_reglin_mean_12n.m,
   run_mc_simulation_12node.m        12-node-scale Monte Carlo recovery simulation
 
