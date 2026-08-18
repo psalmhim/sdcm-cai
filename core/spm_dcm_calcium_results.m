@@ -8,7 +8,7 @@ function spm_dcm_calcium_results(DCM)
 %   (2) Empirical & predicted coherence matrices
 %   (3) Pairwise connection-wise coherence spectra (frequency response)
 %
-% Author: HJ Park & ChatGPT, 2025
+% Author: HJ Park, 2025
 % -------------------------------------------------------------------------
 
 if ischar(DCM)

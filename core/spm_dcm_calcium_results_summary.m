@@ -11,7 +11,7 @@ function spm_dcm_calcium_results_summary(DCM)
 % Prints:
 %   (4) Summary table of mean coherence and power in low/mid/high bands
 %
-% Author: HJ Park & ChatGPT, 2025
+% Author: HJ Park, 2025
 % -------------------------------------------------------------------------
 
 if ischar(DCM)

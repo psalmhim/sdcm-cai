@@ -20,7 +20,7 @@ function [y,w,S,Gu,Gn] = spm_csd_calcium_mtf(P,M,U)
 % via spm_fx_calcium, with neuronal-to-calcium transfer rather than BOLD.
 %
 %--------------------------------------------------------------------------
-% Author: HJ Park & ChatGPT, 2025
+% Author: HJ Park, 2025
 %==========================================================================
 
 % Multiple sessions

@@ -8,7 +8,7 @@ function spm_dcm_calcium_show_params(DCM, threshold)
 %
 % Shows all parameters with their names, prior, posterior, and change
 %==========================================================================
-% Author: H.J. Park & ChatGPT, 2025
+% Author: H.J. Park, 2025
 %==========================================================================
 
 if nargin < 2, threshold = 0; end

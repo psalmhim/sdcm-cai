@@ -27,7 +27,7 @@ function [y, dgdx, dgdP] = spm_gx_calcium(x, u, P, M)
 %   β     - baseline fluorescence offset
 %
 %--------------------------------------------------------------------------
-%   Park & ChatGPT (2025)
+%   Park (2025)
 %==========================================================================
 
 if nargin < 4, M = struct(); end

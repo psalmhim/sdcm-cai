@@ -34,7 +34,7 @@ function [S, Hz] = spm_dcm_mtf_calcium(P, M, U)
 %   - Computes Jacobian respecting [n×2] state structure
 %
 %--------------------------------------------------------------------------
-%   Park & ChatGPT (2025)
+%   Park (2025)
 
 n = size(P.A,1);
 m = n*2;

@@ -12,7 +12,7 @@ function param_map = spm_dcm_calcium_param_map(pE, n)
 % Useful for interpreting parameter plots and understanding which
 % parameters are being estimated.
 %==========================================================================
-% Author: H.J. Park & ChatGPT, 2025
+% Author: H.J. Park, 2025
 %==========================================================================
 
 if nargin < 2
