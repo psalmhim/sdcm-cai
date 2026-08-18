@@ -7,7 +7,6 @@ function run_peb_iter2_single_reglin_mean12n(subj_id)
 %         zebra/subject_N_meantrace_12n.mat              (Mean signals)
 % Saves:  zebra/reglin_mean12n_iter2_subj_N.mat
 %
-% 2026 — IMAG-26-0111
 
 maxNumCompThreads(1);
 home_dir = getenv('HOME');

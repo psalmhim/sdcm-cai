@@ -3,7 +3,6 @@
 % Run AFTER all 3 × 7 DCMs are complete.
 %
 % Saves: zebra/bms_sc_reglin_mean12n.mat
-% 2026 — IMAG-26-0111
 
 maxNumCompThreads(1);
 home_dir = getenv('HOME');

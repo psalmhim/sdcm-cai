@@ -1,7 +1,6 @@
 %% run_splithalf_iter2_halfB_reglin_mean12n.m
 %% Split-half iter2 — HALF B only: S13,S15,S17 (n=3)
 %% Designed to run on server 86 in parallel with Half A on server 89.
-%% 2026 - IMAG-26-0111
 
 clear; clc;
 maxNumCompThreads(1);

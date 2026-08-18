@@ -30,7 +30,6 @@ function extract_pc1_signals_12n_from_raw(subj_id, w_sp)
 %   pc1_active_signals  [12 x T]
 %   node_names, node_idx
 %
-% 2026 — IMAG-26-0111
 
 if nargin < 2 || isempty(w_sp), w_sp = 0.5; end
 

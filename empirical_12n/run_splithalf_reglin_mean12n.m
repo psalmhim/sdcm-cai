@@ -11,7 +11,6 @@
 %%
 %% OUTPUT: zebra/splithalf_reglin_mean12n.mat
 %%
-%% 2026 - IMAG-26-0111
 
 clear; clc;
 maxNumCompThreads(1);

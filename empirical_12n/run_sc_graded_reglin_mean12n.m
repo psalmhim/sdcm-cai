@@ -4,7 +4,6 @@ function run_sc_graded_reglin_mean12n(subj_id)
 % Prior mean (pE.A) kept at spm_dcm_calcium_priors default (not zeroed).
 %
 % Saves: zebra/subject_N_DCM_sc_graded_reglin_mean12n.mat
-% 2026 — IMAG-26-0111
 maxNumCompThreads(1);
 home_dir = getenv('HOME');
 addpath(fullfile(home_dir,'Dropbox/matlabwork/spm25'));

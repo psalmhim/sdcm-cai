@@ -2,8 +2,9 @@
 %
 % Hidden common driver simulation for sDCM-CaI robustness check.
 %
-% Addresses Reviewer 3.6: "Add a latent node (not included in inversion).
-% Show: spurious directed edges appear; quantify error."
+% Robustness check: adds a latent node (not included in inversion) to
+% test whether spurious directed edges appear in the recovered network,
+% and quantifies the resulting error.
 %
 % Design:
 %   Ground truth: 4-node observed network (same as matched-model simulation)
@@ -22,7 +23,6 @@
 % OUTPUT: zebra/hidden_driver_sim_results.mat
 %         figures/FigS_hidden_driver.png
 %
-% 2026 — IMAG-26-0111 revision
 
 clear; clc;
 

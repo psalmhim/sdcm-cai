@@ -34,7 +34,6 @@ function [lbl_deep, info] = teo_kmeans_split(X, xyz_n, w_sp, opts)
 %   sqrt(2*(1-corr)), so the temporal block implements a correlation-like
 %   similarity weighted by spatial proximity.
 %
-% 2026 - IMAG-26-0111 (joint spatial-temporal TeO split)
 %==========================================================================
 
 if nargin < 3 || isempty(w_sp),  w_sp = 0.5;  end

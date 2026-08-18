@@ -3,7 +3,6 @@
 %% Split-half iter2 — correct version: no final group PEB.
 %% Each half: first-pass PEB -> empirical prior -> reinvert subjects -> mean Ep
 %% Compare mean_A vs mean_B directly.
-%% 2026 - IMAG-26-0111
 
 clear; clc;
 maxNumCompThreads(1);

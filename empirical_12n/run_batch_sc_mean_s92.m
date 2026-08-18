@@ -1,6 +1,5 @@
 % Batch: SC binary + graded RegLin-Mean 12n for server 92 subjects (13,15,17).
 % Run AFTER reglin_mean iter2 for S13, S15, S17 complete.
-% 2026 — IMAG-26-0111
 for s = [13, 15, 17]
     fprintf('\n=== SC-binary S%d ===\n', s);
     run_sc_binary_reglin_mean12n(s);

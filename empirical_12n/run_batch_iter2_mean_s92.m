@@ -1,7 +1,6 @@
 % Iter2 reinversion for RegLin-Mean subjects on server 92 (S15, S17).
 % Requires: first-pass PEB at zebra/PEB_sc_flat_reglin_mean12n_results.mat
 %           (generated on server 89 after all 7 flat RegLin-Mean DCMs done)
-% 2026 — IMAG-26-0111
 maxNumCompThreads(1);
 home_dir = getenv('HOME');
 addpath(fullfile(home_dir,'Dropbox/matlabwork/spm25'));

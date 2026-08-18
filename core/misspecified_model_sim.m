@@ -10,7 +10,7 @@
 %
 % Key design choice: A_true is a synthetic sparse 12-node network with
 % meaningful off-diagonal coupling (0.1–0.3 range), same sparsity as
-% the 12-node MC used in R1.3. Individual-level S16 Ep.A is NOT used
+% the 12-node MC simulation elsewhere in this repo. Individual-level S16 Ep.A is NOT used
 % because VB-Laplace shrinks individual posteriors toward zero (off-diagonal
 % ≈ 0.002–0.005), which would trivialize the recovery test.
 %
@@ -19,7 +19,6 @@
 %
 % Output: r, sign consistency, RMSE for off-diagonal A
 %
-% 2026 -- IMAG-26-0111 revision (misspecified-model identifiability test)
 
 clear; clc;
 rng(42);
@@ -42,7 +41,7 @@ dt = DCM_S16.M.dt;             % 0.5 s (2 Hz)
 % Coupling magnitudes: excitatory 0.10–0.25, inhibitory -0.10 to -0.20
 % Diagonal: -0.5 (moderate self-inhibition, stable)
 %
-% Same sparse pattern as 12-node MC in R1.3 for comparability.
+% Same sparse pattern as the 12-node MC simulation for comparability.
 
 A_true = diag(-0.5 * ones(1,n));   % diagonal self-inhibition
 

@@ -3,7 +3,6 @@ function run_peb_iter2_collect_reglin_mean12n()
 % Loads:  zebra/reglin_mean12n_iter2_subj_N.mat  (N=12:18)
 % Saves:  zebra/PEB_iter2_sc_flat_reglin_mean12n_results.mat
 %
-% 2026 — IMAG-26-0111
 
 maxNumCompThreads(1);
 home_dir = getenv('HOME');

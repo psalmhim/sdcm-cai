@@ -14,7 +14,6 @@ function [y, dgdx, dgdP] = spm_gx_calcium_linear(x, u, P, M)
 % Uses same parameter struct as spm_gx_calcium.m for compatibility.
 % Parameters Kd and n are ignored (Hill shape not present).
 %
-% 2026 — BMS model comparison for IMAG-26-0111 revision
 %==========================================================================
 
 if nargin < 4, M = struct(); end

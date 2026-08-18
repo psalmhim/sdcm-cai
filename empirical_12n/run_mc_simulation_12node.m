@@ -2,8 +2,8 @@
 %
 % 12-node Monte Carlo parameter recovery — supplementary validation.
 %
-% Addresses Reviewer 1.3: "Would scaling the simulation to a 12×12 matrix
-% significantly impact the model's performance or identifiability?"
+% Tests whether scaling the simulation to a 12×12 matrix significantly
+% impacts the model's performance or identifiability.
 %
 % Design:
 %   Sparse stable 12×12 ground-truth A matrix (same node labels as empirical).
@@ -15,7 +15,6 @@
 % OUTPUT: zebra/mc_12node_results.mat
 %         figures/FigS_mc_12node.png
 %
-% 2026 — IMAG-26-0111 revision
 
 clear; clc;
 maxNumCompThreads(1);

@@ -3,7 +3,6 @@
 %% Each half: first-pass PEB -> subject reinversion -> iter2 PEB -> BMA
 %%
 %% Half A: S12,S14,S16,S18 (n=4)   Half B: S13,S15,S17 (n=3)
-%% 2026 - IMAG-26-0111
 
 clear; clc;
 maxNumCompThreads(1);
